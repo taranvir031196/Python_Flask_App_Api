@@ -36,7 +36,7 @@ def getCenterInDistricts():
         assert isinstance(availability, dict)
         assert isinstance(availability.get('centers'), list)
         return availability
-           
+
 
 @app.route("/calendarByPin")
 def getCenterByPinCode():
@@ -51,12 +51,12 @@ def getCenterByPinCode():
     date:str  = request.args.get('date')
     print(date)
     availability = cowin.get_availability_by_pincode(pin_code, date)
-    
+
     assert isinstance(availability, dict)
     assert isinstance(availability.get('centers'), list)
     return availability
 
 if __name__ == "__main__":
-    app.run(port=4000)
+    app.run(host='0.0.0.0',port=8080)
 
 
