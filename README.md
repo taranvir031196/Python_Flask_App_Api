@@ -325,4 +325,11 @@ Please try not to spam the CoWin servers and try to keep a timeout between subse
 fixed interval
 
 ---
+Contributions
+
+Contributions are always welcome!
+
+Feel free to modify according to your requirement.
+
+
 
